@@ -79,6 +79,9 @@ img.Thumbnail.thumbnail.archive-thumbnail.featured{
 #sb_instagram{
 margin: 0 -10px 0 auto !important;
 }
+.sb_instagram_header{
+	padding: 0 !important;
+}
 #sb_instagram #sbi_load .sbi_follow_btn{
 margin-left: 0;
 }
@@ -86,20 +89,25 @@ margin-left: 0;
 	height: 500px;
 	width: 100%;
 }
-@media only screen and (max-width: 768px){
-	#sb_instagram{
-	width:100% !important;
-	margin: 0 auto;
-	}
-}
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 	#featuredPost{
 		display: none;
 	}
 	#insta{
 		width: 100%;
 	}
-
+	img.Thumbnail.thumbnail.archive-thumbnail.featured {
+	  width: 100%;
+	  height: auto;
+	  margin-top: -30px;
+	}
+	#sb_instagram{
+	width:100% !important;
+	margin: 0 auto;
+	}
+	.hentry{
+		width: 100% !important;
+	}
 }
 
 
