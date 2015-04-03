@@ -40,23 +40,24 @@ get_header(); // Loads the header.php template. ?>
 	<?php do_atomic( 'before_content' ); // hatch_before_content ?>	
 
 	<div id="content">
-		<div id="featuredPost">
-			<?php do_atomic( 'open_entry' ); // hatch_open_entry ?>
-			<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>	
-			
-			<?php if ( current_theme_supports( 'get-the-image' ) ) {
-					
-				get_the_image( array( 'size' => 'single-thumbnail', 'image_class' => 'featured', 'width' => 220, 'height' => 150, 'default_image' => get_template_directory_uri() . '/images/archive_image_placeholder.png' ) );
-					
-			} ?>					
-					
-			<?php do_atomic( 'close_entry' ); // hatch_close_entry ?>
-		</div>
+		<div class="topPart">
+			<div id="featuredPost">
+				<?php do_atomic( 'open_entry' ); // hatch_open_entry ?>
+				<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>	
+				
+				<?php if ( current_theme_supports( 'get-the-image' ) ) {
+						
+					get_the_image( array( 'size' => 'single-thumbnail', 'image_class' => 'featured', 'width' => 460, 'height' => 320, 'default_image' => get_template_directory_uri() . '/images/archive_image_placeholder.png' ) );
+						
+				} ?>					
+						
+				<?php do_atomic( 'close_entry' ); // hatch_close_entry ?>
+			</div>
 
-		<div id="insta">
-			<?php echo do_shortcode('[instagram-feed num=9 cols-3]');//instagram ?> 
+			<div id="insta">
+				<?php echo do_shortcode('[instagram-feed num=9 cols-3]');//instagram ?> 
+			</div>
 		</div>
-		<div class="clear"></div>
 		<?php do_atomic( 'open_content' ); // hatch_open_content ?>
 
 		<div class="hfeed">
