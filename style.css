@@ -52,6 +52,39 @@ h1,h2,h3 {
   width: 100%;
   height: auto;
 }
+.menu-item a{
+	color:white !important;
+	padding-top: 10px;
+}
+#menu-primary li.current-menu-item a{
+	color: white;
+}
+#menu-primary{
+	top: 30px;
+	margin: 0;
+	left: -5%;
+	background: black;
+	width: 110%;
+	float: left;
+	position: relative;
+}
+#menu-primary .menu{
+	float: left;
+}
+img.Thumbnail.thumbnail.archive-thumbnail.featured{
+	width: 220px;
+	height: 220px;
+	margin-top: -30px;
+}
+@media only screen and (max-width: 767px) {
+	#featuredPost{
+		display: none;
+	}
+	#insta{
+		width: 100%;
+	}
+
+}
 
 
 
@@ -621,15 +654,15 @@ input[type="submit"]:hover { cursor: pointer }
 
 /* Primary menu 
 -------------------------------------------------------------- */
-#menu-primary {
+/*#menu-primary {
 	font-size: 1em;
 	width: 65%;
 	margin: 20px 0 0 0;
 	float: right;
 	position: relative;
 	z-index: 99;
-}
-#menu-primary .menu { float: right; }
+}*/
+#menu-primary .menu { float: left; }
 #menu-primary .menu ul { float: right; }
 #menu-primary li {
 	display: block;
@@ -642,7 +675,7 @@ input[type="submit"]:hover { cursor: pointer }
 	display: block;
 	font-weight: bold;
 }
-#menu-primary li.current-menu-item a { color: #aaa; }
+#menu-primary li.current-menu-item a { color: white; }
 #menu-primary li li, #menu-primary li li.current-menu-item li {
 	clear: both;
 	float: none;
@@ -656,7 +689,7 @@ input[type="submit"]:hover { cursor: pointer }
 	margin: 0 5px;
 	padding: 12px 15px;
 }
-#menu-primary ul li a:hover, #menu-primary li ul li a:hover { color: #ff69b4; }
+#menu-primary ul li a:hover, #menu-primary li ul li a:hover { color: #ff68b4 !important; }
 
 /* Dropdowns
 -------------------------------------------------------------- */
@@ -1207,49 +1240,9 @@ input[type="submit"]:hover { cursor: pointer }
 	.col-29 { width: 16.66% }
 	.col-30 { width: 16.66% }
 }
-.menu-item a{
-	color:white;
-	padding-top: 10px;
-}
-#menu-primary li.current-menu-item a{
-	color: #ff69b4;
-}
-#menu-primary{
-	top: 30px;
-	margin: 0;
-	left: -5%;
-	background: black;
-	width: 110%;
-	float: left;
-}
-#menu-primary .menu{
-	float: left;
-}
-img.Thumbnail.thumbnail.archive-thumbnail.featured{
-	width: auto;
-	height: 220px;
-	margin-top: -30px;
-}
-
 /* Mobile (portrait) */
 @media only screen and (max-width: 767px) {
-	div#sb_instagram{
-		width:100% !important;
-		margin: 0 auto;
-	}
-	img.Thumbnail.thumbnail.archive-thumbnail.featured{
-		width: 100%;
-		height: auto;
-		margin-top: -30px;
-	}
-	.hentry{
-		width:100% !important;
-	}
-
-	.archive-thumbnail{
-		width:100%;
-	}
-	.wrap { max-width: 80%; }
+	.wrap { max-width: 300px; }
 	body { line-height: 1.666666666666667em; }
 	#header { margin-bottom: 10px; }
 	#branding {
@@ -1270,10 +1263,9 @@ img.Thumbnail.thumbnail.archive-thumbnail.featured{
 		clear: both;
 		width: 100%;
 		margin-top: 10px;
-		left: 0;
 	}
 	#menu-primary .menu { float: left; }
-	#menu-primary ul li { clear: right; margin: 0 31px; }
+	#menu-primary ul li { clear: left; }
 	#menu-primary ul li a { margin-left: 0; }
 	#content { width: 100%; }
 	.home .hentry, .archive .hentry {
