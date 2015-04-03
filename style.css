@@ -76,6 +76,18 @@ img.Thumbnail.thumbnail.archive-thumbnail.featured{
 	height: 220px;
 	margin-top: -30px;
 }
+#sb_instagram{
+margin: 0 -10px 0 auto !important;
+}
+#sb_instagram #sbi_load .sbi_follow_btn{
+margin-left: 0;
+}
+@media only screen and (max-width: 768px){
+	#sb_instagram{
+	width:100% !important;
+	margin: 0 auto;
+	}
+}
 @media only screen and (max-width: 767px) {
 	#featuredPost{
 		display: none;
@@ -1258,14 +1270,22 @@ input[type="submit"]:hover { cursor: pointer }
 		margin-bottom: 20px;
 	}
 	#header-banner, #sidebar-subsidiary .widget, #respond, .singular-page #content, #comments-template, .singular-page #comments-template { width: 100%; }
-	#menu-primary {
+	 {
 		float: left;
 		clear: both;
 		width: 100%;
 		margin-top: 10px;
 	}
-	#menu-primary .menu { float: left; }
-	#menu-primary ul li { clear: left; }
+	#margin-primary{
+		width: 110%;
+	}
+	#menu-primary .menu { 
+		float: left;
+	}
+	#menu-primary ul li { 
+		/*clear: left;  sunny*/
+		margin: 0 33px;
+	}
 	#menu-primary ul li a { margin-left: 0; }
 	#content { width: 100%; }
 	.home .hentry, .archive .hentry {
