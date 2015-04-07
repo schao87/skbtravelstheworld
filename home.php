@@ -49,8 +49,8 @@ get_header(); // Loads the header.php template. ?>
 						
 					get_the_image( array( 'size' => 'single-thumbnail', 'image_class' => 'featured', 'width' => 460, 'height' => 320, 'default_image' => get_template_directory_uri() . '/images/archive_image_placeholder.png' ) );
 						
-				} ?>					
-						
+				} ?>
+					
 				<?php do_atomic( 'close_entry' ); // hatch_close_entry ?>
 			</div>
 
